@@ -25,22 +25,27 @@
 
                 <div>
                     <label for="nome">Nome completo:</label><br>
+
                     <input type="texto" id="nome" name="nome">
                 </div>
                 <br>
                 <div>
                     <label for="e-mail">E-mail:</label><br>
+
                     <input type="e-mail" id="e-mail" name="e-mail">
                 </div>
                 <br>
                 <div>
-                    <label for="telefone">telefone:</label><br>
+                    <label for="telefone">telefone (ex: 1199998888)</label><br>
+
                     <input type="tel" id="telefone" name="telefone">
                 </div>
                 <br>
                 <div>
                     <label for="pedido">pedido:</label><br>
-                    <input id="pedido" name="pedido">
+
+                    <input id="pedido" name="pedido"required>
+                    <option value="">--------Selecione uma opção--------</option>
                     <option value="Red Velvet Magnólia">Bolo</option>
                     <option value="Bolo de Pistache & Frutas Amarelas">Bolo</option>
                     <option value="Cheesecake de Frutas Vermelhas">Bolo</option>
@@ -48,6 +53,15 @@
                     <option value="Caixa de Brigadeiros Gourmet (6 unidades)">brigadeiro</option>
                     <option value="Cappuccino Especial Magnólia">brigadeiro</option>
                 </div>
+        <br>
+        <div>
+            <label for="mansagem">detalhes das encomendas</label><br>
+
+            <textarea id="mensagem" name="mansagem" rows="4" cols="30" required></textarea>
+        </div>
+        <br>
+        <buttom type="submit">enviar encomenda</buttom>
+        </form>
         </section>
     </main>
     <footer>
